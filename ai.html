@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f6f8" />
+  <title>Diligence assistant — Deal workspace</title>
+  <link rel="stylesheet" href="/ai.css" />
+</head>
+<body>
+  <div class="assistant-shell">
+    <header class="assistant-header">
+      <a href="/" class="back-link"><span>←</span> Deal workspace</a>
+      <div class="local-status" id="modelStatus"><span class="status-light"></span><span>Connecting to local AI…</span></div>
+    </header>
+
+    <main class="assistant-main">
+      <div class="page-intro">
+        <div class="eyebrow">PROJECT NORTHSTAR <span>·</span> BUY-SIDE DILIGENCE</div>
+        <h1>Diligence assistant</h1>
+        <p>Ask questions across your deal documents. Answers include the passages they’re based on.</p>
+      </div>
+
+      <div class="workbench">
+        <aside class="documents-panel">
+          <div class="panel-title-row"><div><h2>Deal documents</h2><p id="documentCount">No documents indexed</p></div><span class="local-badge">LOCAL</span></div>
+          <label class="dropzone" id="dropzone" for="filePicker">
+            <span class="upload-icon">↑</span>
+            <strong>Drop files here or <u>browse</u></strong>
+            <small>PDF, DOCX, TXT, or MD · up to 20 MB each</small>
+          </label>
+          <input type="file" id="filePicker" accept=".pdf,.docx,.txt,.md" multiple hidden />
+          <div class="upload-progress" id="uploadProgress" hidden><span></span><small>Reading and indexing locally…</small></div>
+          <div class="documents-heading"><span>INDEXED FILES</span><button id="selectAllBtn" type="button">Deselect all</button></div>
+          <div class="document-list" id="documentList"><div class="empty-docs">Upload a diligence file to get started.</div></div>
+          <div class="privacy-note"><span>⌑</span><p>Files and AI requests stay on this machine. Scanned PDFs without selectable text aren’t OCR’d yet.</p></div>
+        </aside>
+
+        <section class="qa-panel" aria-label="Diligence question and answer">
+          <div class="qa-topline"><div><h2>Ask your documents</h2><p>Answers are drafts for your review, not legal conclusions.</p></div><button type="button" class="clear-button" id="clearChat">Clear</button></div>
+          <div class="conversation" id="conversation">
+            <div class="welcome-state" id="welcomeState">
+              <div class="sparkle">✳</div>
+              <h3>Start with a diligence question</h3>
+              <p>I’ll search the selected documents, draft an answer, and show the supporting passages. If the files don’t answer it, I’ll say what’s missing.</p>
+              <div class="suggestions">
+                <button type="button">What are the company’s top customer concentration risks?</button>
+                <button type="button">Summarize the change-of-control terms in key contracts.</button>
+                <button type="button">What information is missing about revenue recognition?</button>
+              </div>
+            </div>
+          </div>
+          <form class="question-form" id="questionForm">
+            <textarea id="questionInput" rows="2" maxlength="2000" placeholder="Ask a question about the indexed deal documents…" required></textarea>
+            <div class="composer-bottom"><span><i></i> <span id="selectedCount">0 documents selected</span></span><button type="submit" id="askButton" disabled>Ask assistant <span>↑</span></button></div>
+          </form>
+          <div class="fine-print">Local model answers can be incomplete or wrong. Check the cited document before relying on an answer.</div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <div class="source-modal" id="sourceModal" aria-hidden="true"><div class="source-dialog" role="dialog" aria-modal="true"><button class="close-source" id="closeSource" aria-label="Close">×</button><div class="source-kicker">SOURCE PASSAGE</div><h2 id="sourceTitle"></h2><p id="sourceLocation"></p><blockquote id="sourceExcerpt"></blockquote></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/ai.js"></script>
+</body>
+</html>

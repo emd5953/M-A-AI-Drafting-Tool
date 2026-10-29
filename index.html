@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f6f8" />
+  <title>M&amp;A deal workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Deal workspace home">
+        <span class="brand-mark"><i></i><i></i><i></i></span><span>deal workspace<span class="brand-dot">.</span></span>
+      </a>
+      <div class="workspace-switcher"><div class="workspace-avatar">N</div><div class="workspace-copy"><strong>Northstar Partners</strong><small>Workspace</small></div><span class="chevron">⌄</span></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="main-nav">
+        <a href="#" class="nav-item"><span class="nav-icon">▦</span>Overview</a>
+        <a href="#" class="nav-item active"><span class="nav-icon">◫</span>Deal rooms<span class="nav-count">3</span></a>
+        <a href="#" class="nav-item"><span class="nav-icon">◷</span>Tasks<span class="nav-count muted">8</span></a>
+        <a href="#" class="nav-item"><span class="nav-icon">⌕</span>Search</a>
+      </nav>
+      <div class="nav-label deals-label">YOUR DEALS <button class="plus" aria-label="Add deal">+</button></div>
+      <nav class="deal-nav">
+        <a href="#" class="deal-link selected"><span class="deal-dot blue"></span><span>Project Northstar</span><span class="deal-menu">···</span></a>
+        <a href="#" class="deal-link"><span class="deal-dot amber"></span><span>Atlas Technologies</span></a>
+        <a href="#" class="deal-link"><span class="deal-dot green"></span><span>Summit / Redwood</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="storage"><div class="storage-head"><span>Storage</span><span>68%</span></div><div class="storage-track"><span></span></div><small>6.8 GB of 10 GB used</small></div>
+        <a href="#" class="nav-item"><span class="nav-icon">⚙</span>Settings</a>
+        <div class="profile"><div class="avatar avatar-user">JL</div><div class="profile-copy"><strong>Jordan Lee</strong><small>Deal lead</small></div><span class="chevron">⌄</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar"><div class="breadcrumb"><span>Deal rooms</span><b>/</b><strong>Project Northstar</strong></div><div class="top-actions"><button class="icon-button" aria-label="Notifications">♧<span class="notification-dot"></span></button><div class="top-divider"></div><div class="avatar-stack"><span class="avatar avatar-seller">AC</span><span class="avatar avatar-buyer">MR</span><span class="avatar avatar-more">+4</span></div><button class="share-btn" id="inviteBtn"><span>＋</span> Invite</button></div></header>
+      <div class="page-wrap">
+        <section class="deal-heading">
+          <div class="deal-title-wrap"><div class="eyebrow"><span class="status-pulse"></span>ACTIVE DEAL <span class="eyebrow-divider">·</span> UPDATED 12 MIN AGO</div><div class="title-row"><h1>Project Northstar</h1><button class="more-btn" aria-label="More options">···</button></div><p class="deal-subtitle">Acquisition of Northstar Analytics, Inc. <span>·</span> <span class="deal-type">Buy-side</span></p></div>
+          <div class="deal-amount"><span>INDICATIVE ENTERPRISE VALUE</span><strong>$240M</strong><small>Confidential <b>↗</b></small></div>
+        </section>
+
+        <section class="stage-card">
+          <div class="stage-top"><div><div class="section-kicker">DEAL PROGRESS</div><div class="stage-current">Due diligence <span class="stage-pill">IN PROGRESS</span></div></div><button class="stage-action" id="stageBtn">View timeline <span>↗</span></button></div>
+          <div class="stage-track">
+            <div class="stage-step complete"><div class="step-node">✓</div><div class="step-copy"><strong>Preparation</strong><small>Sep 04</small></div></div><div class="stage-line done"></div>
+            <div class="stage-step complete"><div class="step-node">✓</div><div class="step-copy"><strong>LOI &amp; exclusivity</strong><small>Sep 18</small></div></div><div class="stage-line done"></div>
+            <div class="stage-step current"><div class="step-node"><span></span></div><div class="step-copy"><strong>Due diligence</strong><small>In progress</small></div></div><div class="stage-line"></div>
+            <div class="stage-step upcoming"><div class="step-node">4</div><div class="step-copy"><strong>Definitive docs</strong><small>Up next</small></div></div><div class="stage-line"></div>
+            <div class="stage-step upcoming"><div class="step-node">5</div><div class="step-copy"><strong>Signing &amp; close</strong><small>—</small></div></div>
+          </div>
+          <div class="stage-foot"><span class="stage-foot-icon">◷</span><span><strong>Target close</strong> &nbsp; Dec 19, 2025</span><span class="stage-foot-separator">·</span><span>52 days remaining</span><a href="#">Edit timeline</a></div>
+        </section>
+
+        <section class="metrics-grid">
+          <article class="metric-card"><div class="metric-head">OPEN ITEMS <span class="metric-icon orange">↗</span></div><div class="metric-value">12 <small>of 48</small></div><div class="metric-foot"><span class="mini-progress"><i style="width:75%"></i></span><span>75% resolved</span></div></article>
+          <article class="metric-card"><div class="metric-head">DOCUMENTS <span class="metric-icon violet">▤</span></div><div class="metric-value">186 <small>files</small></div><div class="metric-foot"><span class="tiny-dot green-dot"></span><span>24 added this week</span></div></article>
+          <article class="metric-card"><div class="metric-head">DRAFTS IN REVIEW <span class="metric-icon blue-icon">✎</span></div><div class="metric-value">4 <small>drafts</small></div><div class="metric-foot"><span class="tiny-dot blue-dot"></span><span>2 awaiting your review</span></div></article>
+          <article class="metric-card"><div class="metric-head">NEXT MILESTONE <span class="metric-icon gray-icon">⌁</span></div><div class="metric-value metric-date">Nov 14 <small>2025</small></div><div class="metric-foot"><span>QofE report delivery</span><span class="days-tag">in 7 days</span></div></article>
+        </section>
+
+        <section class="content-grid">
+          <div class="primary-column">
+            <article class="panel documents-panel">
+              <div class="panel-heading"><div><div class="panel-title">Documents <span class="count-badge">186</span></div><p>Shared files and active drafts</p></div><div class="panel-tools"><button class="small-icon-btn" id="searchToggle" aria-label="Search documents">⌕</button><button class="outline-btn" id="filterBtn">☷ <span>Filter</span></button><button class="solid-btn" id="uploadBtn">＋ Upload</button><input type="file" id="fileInput" hidden multiple /></div></div>
+              <div class="tabs"><button class="tab active" data-tab="all">All files <span>186</span></button><button class="tab" data-tab="drafts">Drafts <span>12</span></button><button class="tab" data-tab="flagged">Flagged <span class="flag-count">5</span></button><button class="tab" data-tab="recent">Recently viewed</button></div>
+              <div class="search-row" id="searchRow"><input id="docSearch" placeholder="Search documents..." /><span>⌕</span></div>
+              <div class="file-table-wrap"><table class="file-table"><thead><tr><th>NAME <span>↕</span></th><th>STATUS</th><th>LAST UPDATED <span>↕</span></th><th>OWNER</th><th></th></tr></thead><tbody id="fileRows">
+                <tr data-kind="drafts flagged"><td><div class="file-name"><span class="file-type docx">W</span><span><strong>Stock Purchase Agreement</strong><small>SPA_v0.8_redline.docx <i class="flag-mark">⚑</i></small></span></div></td><td><span class="status-chip review">In review</span></td><td><span class="date-main">Today, 10:42 AM</span><span class="date-sub">Version 0.8</span></td><td><div class="owner"><span class="avatar avatar-seller small-avatar">AC</span><span>Alex Chen</span></div></td><td><button class="row-more">···</button></td></tr>
+                <tr data-kind="drafts"><td><div class="file-name"><span class="file-type pdf">P</span><span><strong>Quality of Earnings Report</strong><small>QofE_final_draft.pdf</small></span></div></td><td><span class="status-chip pending">Awaiting seller</span></td><td><span class="date-main">Today, 9:18 AM</span><span class="date-sub">Version 1.2</span></td><td><div class="owner"><span class="avatar avatar-buyer small-avatar">MR</span><span>Maya Rivera</span></div></td><td><button class="row-more">···</button></td></tr>
+                <tr data-kind="drafts flagged"><td><div class="file-name"><span class="file-type docx">W</span><span><strong>Disclosure Schedules</strong><small>Disclosure_Schedules_v3.docx <i class="flag-mark">⚑</i></small></span></div></td><td><span class="status-chip changes">Changes requested</span></td><td><span class="date-main">Yesterday</span><span class="date-sub">Version 3.0</span></td><td><div class="owner"><span class="avatar avatar-seller small-avatar">AC</span><span>Alex Chen</span></div></td><td><button class="row-more">···</button></td></tr>
+                <tr data-kind="all"><td><div class="file-name"><span class="file-type xlsx">X</span><span><strong>Customer Contracts — Top 20</strong><small>Customer_contracts.xlsx</small></span></div></td><td><span class="status-chip shared">Shared</span></td><td><span class="date-main">Oct 31, 2025</span><span class="date-sub">Version 1.0</span></td><td><div class="owner"><span class="avatar avatar-seller small-avatar">AC</span><span>Alex Chen</span></div></td><td><button class="row-more">···</button></td></tr>
+                <tr data-kind="flagged all"><td><div class="file-name"><span class="file-type pdf">P</span><span><strong>Employment Agreements</strong><small>Employment_agreements.pdf <i class="flag-mark">⚑</i></small></span></div></td><td><span class="status-chip flagged-status">Flagged</span></td><td><span class="date-main">Oct 30, 2025</span><span class="date-sub">Version 1.0</span></td><td><div class="owner"><span class="avatar avatar-buyer small-avatar">MR</span><span>Maya Rivera</span></div></td><td><button class="row-more">···</button></td></tr>
+              </tbody></table></div>
+              <div class="table-footer"><span>Showing <strong>5</strong> of 186 files</span><button>View all documents <span>→</span></button></div>
+            </article>
+            <article class="panel activity-panel"><div class="panel-heading compact"><div><div class="panel-title">Recent activity</div><p>Latest updates across your deal room</p></div><button class="text-button">View all <span>→</span></button></div><div class="activity-list">
+              <div class="activity-item"><div class="activity-avatar activity-blue">✎</div><div class="activity-copy"><p><strong>Maya Rivera</strong> left a comment on <b>Stock Purchase Agreement</b></p><small>“Can we clarify the working capital peg calculation?”</small></div><time>12 min ago</time></div>
+              <div class="activity-item"><div class="activity-avatar activity-green">↑</div><div class="activity-copy"><p><strong>Alex Chen</strong> uploaded <b>Customer Contracts — Top 20</b></p><small>Data Room / Commercial</small></div><time>1 hr ago</time></div>
+              <div class="activity-item"><div class="activity-avatar activity-purple">✓</div><div class="activity-copy"><p><strong>Jordan Lee</strong> resolved an item in <b>Financial diligence</b></p><small>Revenue recognition methodology</small></div><time>3 hr ago</time></div>
+            </div></article>
+          </div>
+          <aside class="right-column">
+            <article class="panel actions-panel"><div class="panel-heading compact"><div><div class="panel-title">Needs your attention <span class="attention-count">3</span></div><p>Items waiting on you</p></div><button class="dots">···</button></div><div class="attention-list">
+              <button class="attention-item"><span class="attention-icon comment-icon">☷</span><span class="attention-copy"><strong>Review comments</strong><small>Stock Purchase Agreement</small><span class="attention-meta"><i class="tiny-dot blue-dot"></i> 4 new comments <i>·</i> 12 min ago</span></span><span class="arrow">→</span></button>
+              <button class="attention-item"><span class="attention-icon alert-icon">!</span><span class="attention-copy"><strong>Resolve flagged clause</strong><small>Disclosure Schedules</small><span class="attention-meta"><i class="tiny-dot orange-dot"></i> 2 issues flagged <i>·</i> Yesterday</span></span><span class="arrow">→</span></button>
+              <button class="attention-item"><span class="attention-icon approval-icon">◷</span><span class="attention-copy"><strong>Approve QofE draft</strong><small>Quality of Earnings Report</small><span class="attention-meta"><i class="tiny-dot purple-dot"></i> Awaiting your review <i>·</i> 1 day ago</span></span><span class="arrow">→</span></button>
+            </div><button class="all-tasks">Go to all tasks <span>→</span></button></article>
+            <article class="panel team-panel"><div class="panel-heading compact"><div><div class="panel-title">Deal team</div><p>Both sides, one workspace</p></div><button class="dots">···</button></div><div class="team-side"><div class="team-side-head"><span class="team-label buyer-label">BUYER</span><span>Northstar Partners</span><span class="team-total">3</span></div><div class="team-person"><span class="avatar avatar-user">JL</span><span><strong>Jordan Lee</strong><small>You · Deal lead</small></span><span class="presence online"></span></div><div class="team-person"><span class="avatar avatar-buyer">MR</span><span><strong>Maya Rivera</strong><small>Legal counsel</small></span><span class="presence online"></span></div><div class="team-person"><span class="avatar avatar-buyer2">DK</span><span><strong>David Kim</strong><small>Finance</small></span><span class="presence"></span></div></div><div class="team-divider"></div><div class="team-side"><div class="team-side-head"><span class="team-label seller-label">SELLER</span><span>Northstar Analytics</span><span class="team-total">3</span></div><div class="team-person"><span class="avatar avatar-seller">AC</span><span><strong>Alex Chen</strong><small>CEO · Deal lead</small></span><span class="presence online"></span></div><div class="team-person"><span class="avatar avatar-seller2">SP</span><span><strong>Sarah Patel</strong><small>Legal counsel</small></span><span class="presence"></span></div><div class="team-person"><span class="avatar avatar-seller3">TW</span><span><strong>Tom Wilson</strong><small>Finance</small></span><span class="presence"></span></div></div><button class="manage-team" id="teamBtn">Manage deal team <span>→</span></button></article>
+            <article class="ai-card"><div class="ai-orb">✳</div><div class="ai-content"><span class="ai-label">AI DILIGENCE ASSISTANT</span><strong>Find the evidence faster.</strong><p>Ask questions across your indexed deal documents and review the source passages behind each answer.</p><button id="aiBtn">Open AI assistant <span>↗</span></button></div><span class="ai-spark spark-one">✳</span><span class="ai-spark spark-two">✦</span></article>
+          </aside>
+        </section>
+        <footer class="page-footer"><span>M&amp;A workspace <b>·</b> Deal collaboration prototype</span><span><i class="secure-dot"></i> Local development <b>·</b> Changes stored in this browser</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop"><div class="modal"><button class="modal-close" id="modalClose">×</button><div class="modal-icon">✳</div><div class="modal-eyebrow">AI DILIGENCE ASSISTANT</div><h2 id="modalTitle">Your deal, in context.</h2><p id="modalText">Ask a question about the documents in Project Northstar, review open issues, or start a first draft.</p><div class="modal-input"><input id="modalPrompt" placeholder="Ask about this deal..." /><button id="modalSend">↑</button></div><div class="suggestion-row"><button>Summarize open issues</button><button>Draft a response</button></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
